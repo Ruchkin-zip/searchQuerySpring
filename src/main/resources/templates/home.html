@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/home.css" th:href="@{/css/home.css}" rel="stylesheet" />
+    <title>Мой поисковик</title>
+</head>
+<body>
+
+<form action="google" class="search-bar">
+    <input type="search" name="searchGoogle" pattern=".*\S.*" required>
+    <button class="search-btn" type="submit">
+        <span>Search</span>
+    </button>
+    Google
+</form>
+<form action="yandex" class="search-bar">
+    <input type="search" name="searchYandex" pattern=".*\S.*" required>
+    <button class="search-btn" type="submit">
+        <span>Search</span>
+    </button>
+    Yandex
+</form>
+
+<form action="duckduckgo" class="search-bar">
+    <input type="search" name="searchDuckduckgo" pattern=".*\S.*" required>
+    <button class="search-btn" type="submit">
+        <span>Search</span>
+    </button>
+    Duckduckgo
+</form>
+</body>
+</html>
+
+
+
